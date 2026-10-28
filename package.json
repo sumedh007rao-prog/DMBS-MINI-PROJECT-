@@ -1,0 +1,23 @@
+{
+  "name": "recruitment-app",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "seed:users": "node --env-file=.env scripts/seed-users.mjs",
+    "index:vectors": "node --env-file=.env scripts/index-vectors.mjs"
+  },
+  "dependencies": {
+    "@qdrant/js-client-rest": "^1.11.0",
+    "@xenova/transformers": "^2.17.2",
+    "bcryptjs": "^2.4.3",
+    "jose": "^5.9.6",
+    "mysql2": "^3.11.3",
+    "next": "14.2.15",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}

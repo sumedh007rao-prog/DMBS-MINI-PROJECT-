@@ -1,0 +1,19 @@
+:root{--bg:#f5f6fa;--card:#fff;--ink:#1c2230;--mute:#667085;--brand:#3b5bdb;--brand-d:#2f49b3;--ok:#2b8a3e;--bad:#c92a2a;--line:#e3e6ee}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink)}
+nav{display:flex;gap:6px;align-items:center;padding:10px 24px;background:var(--card);border-bottom:1px solid var(--line);flex-wrap:wrap}
+nav b{margin-right:16px;color:var(--brand)}nav a{padding:6px 12px;border-radius:6px;color:var(--ink);text-decoration:none;font-size:14px}
+nav a:hover{background:var(--bg)}nav .sp{flex:1}nav small{color:var(--mute)}
+main{max-width:1100px;margin:24px auto;padding:0 16px}h1{font-size:22px;margin:0 0 16px}h2{font-size:16px;margin:0 0 10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;margin-bottom:16px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.stat{font-size:28px;font-weight:700;color:var(--brand)}.mute{color:var(--mute);font-size:13px}
+input,select,textarea{padding:8px 10px;border:1px solid var(--line);border-radius:6px;font:inherit;background:#fff;max-width:100%}
+textarea{width:100%;min-height:90px}.row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;align-items:center}
+button{padding:8px 14px;border:0;border-radius:6px;background:var(--brand);color:#fff;font:inherit;cursor:pointer}
+button:hover{background:var(--brand-d)}button.sec{background:#e9ecf5;color:var(--ink)}button.bad{background:var(--bad)}button.ok{background:var(--ok)}
+table{width:100%;border-collapse:collapse;font-size:14px}th,td{text-align:left;padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--mute);font-weight:600;font-size:12px;text-transform:uppercase}
+.badge{display:inline-block;padding:2px 8px;border-radius:10px;font-size:12px;background:#e9ecf5}
+.Hired,.Open{background:#d3f9d8;color:var(--ok)}.Rejected,.Closed{background:#ffe3e3;color:var(--bad)}.Shortlisted{background:#fff3bf}
+.Interview-Scheduled{background:#d0ebff}.msg{padding:10px;border-radius:6px;margin-bottom:12px;background:#ffe3e3;color:var(--bad)}
+.msg.good{background:#d3f9d8;color:var(--ok)}.auth{max-width:380px;margin:60px auto}.auth input{width:100%;margin-bottom:10px}
